@@ -27,7 +27,7 @@
 <body class="font-serif">
     <header id="home">
         <div class="md:flex flex-row md:w-[90%] ml-auto mr-auto">
-            <div class="flex flex-col justify-center items-center md:w-[25%] h-screen overflow-y-scroll leading-[2] bg-[#F7F7F7]">
+            <div class="md:flex flex-col justify-center items-center md:w-[25%] h-screen overflow-y-scroll leading-[2] bg-[#F7F7F7]">
                 <div class="profile">
                     <img src="./images/img2.jpg" class="w-[200px] h-[200px] rounded-[100px] border-none">
                 </div>
@@ -35,7 +35,7 @@
                     <h2 class="font-extrabold text-xl">Matthew Dinko</h2>
                     <p class="italic">Backend Web Developer in Ghana</p>
                 </div>
-                <nav class="flex flex-col items-center justify-between pt-12">
+                <nav class="md:flex flex-col items-center justify-between pt-12">
                     <a href="#home" class="decoration-none decoration-black">Home</a>
                     <a href="#about" class="decoration-none decoration-black">About</a>
                     <a href="#services" class="decoration-none decoration-black">Services</a>
@@ -47,13 +47,13 @@
                 </nav>
             </div>
             <div class="md:w-[75%]">
-                <section class="h-full">
-                    <div class="flex flex-row leading-[2] pt-[2rem] gap-[3rem]">
+                <section class="md:h-full">
+                    <div class="md:flex flex-row leading-[2] pt-[2rem] gap-[3rem]">
                         <div class="leading-[2] pl-[4rem]">
                             <h1> Hi! </h1>
                             <h1>I'm <b class="">Matthew</b></h1>
                             <p>A junior web developer</p>
-                            <button class="vibrate-1 w-[10rem] h-[3rem] bg-orange-300 text-white border-solid border-[2px] border-black rounded-lg">DOWNLOAD CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                            <button class="vibrate-1 w-[10rem] md:h-[3rem] bg-orange-300 text-white border-solid border-[2px] border-black rounded-lg">DOWNLOAD CV <i class="fa fa-download" aria-hidden="true"></i></button>
                         </div>
                         <div class="md:flex flex-col justify-center items-center bg-orange-300 gap-8 rounded-lg" id="about">
                             <p> About Me</p>
@@ -64,7 +64,7 @@
                     </div>
                     
                     <div>    
-                        <div class="flex flex-col justify-center items-center bg-orange-300 md:h-[30vh] md:w-full rounded-lg border-t-[2px] border-solid">
+                        <div class="md:flex flex-col justify-center items-center bg-orange-300 md:h-[30vh] md:w-full rounded-lg border-t-[2px] border-solid">
                             <button class="relative overflow-hidden border-none bg-transparent">
                                 <h3 class="uppercase text-4xl typing">Hire Me!</h3>
                             </button>
@@ -226,7 +226,7 @@
         </section>
         
         
-        <section class="md:w-full md:flex flex-col md:flex-row gap-8 mx-auto h-[80vh]" id="contact">
+        <section class="md:w-full md:flex md:flex-row gap-8 mx-auto h-[80vh]" id="contact">
             <div class="md:w-full md:w-2/3">
                 <p class="pt-4">Get in Touch</p>
                 <h2 class="text-xl uppercase font-extrabold pt-8">Contact</h2>
@@ -251,10 +251,8 @@
                     <button type="submit" class="md:w-[25%] bg-orange-300 hover:bg-red-500 text-white font-bold py-2 rounded-lg transition duration-300">
                         Send Message
                     </button>
-                </form>
-                        
-            </div>
-                
+                </form>            
+            </div>   
             <div class="md:flex flex-col gap-[3rem]">
                 <div class="pt-32">
                     <button> <i class="fa fa-envelope" aria-hidden="true"></i></button>
