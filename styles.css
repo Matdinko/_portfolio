@@ -68,6 +68,7 @@
         grid-column-gap: 10px;
         grid-row-gap: 0px;
         }
+        
         @keyframes typing {
           from {
               width: 0;
