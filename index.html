@@ -1,0 +1,289 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" href="./images/favicon.ico.png">
+    <style> .hex-btn {
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        transition: transform 0.2s ease, background-color 0.3s ease;
+      }
+      
+      .hex-btn:hover {
+        @apply bg-red-700 scale-105;
+      }
+      </style>
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body class="font-serif">
+    <header id="home">
+        <div class="md:flex flex-row md:w-[90%] ml-auto mr-auto">
+            <div class="flex flex-col justify-center items-center md:w-[25%] h-screen overflow-y-scroll leading-[2] bg-[#F7F7F7]">
+                <div class="profile">
+                    <img src="./images/img2.jpg" class="w-[200px] h-[200px] rounded-[100px] border-none">
+                </div>
+                <div>
+                    <h2 class="font-extrabold text-xl">Matthew Dinko</h2>
+                    <p class="italic">Backend Web Developer in Ghana</p>
+                </div>
+                <nav class="flex flex-col items-center justify-between pt-12">
+                    <a href="#home" class="decoration-none decoration-black">Home</a>
+                    <a href="#about" class="decoration-none decoration-black">About</a>
+                    <a href="#services" class="decoration-none decoration-black">Services</a>
+                    <a href="#skills" class="decoration-none decoration-black">Skills</a>
+                    <a href="#education" class="decoration-none decoration-black">Education</a>
+                    <a href="#experiences" class="decoration-none decoration-black">Experiences</a>
+                    <a href="#projects" class="decoration-none decoration-black">Projects</a>
+                    <a href="#contact" class="decoration-none decoration-black">Contact</a>
+                </nav>
+            </div>
+            <div class="md:w-[75%]">
+                <section class="h-full">
+                    <div class="flex flex-row leading-[2] pt-[2rem] gap-[3rem]">
+                        <div class="leading-[2] pl-[4rem]">
+                            <h1> Hi! </h1>
+                            <h1>I'm <b class="">Matthew</b></h1>
+                            <p>A junior web developer</p>
+                            <button class="vibrate-1 w-[10rem] h-[3rem] bg-orange-300 text-white border-solid border-[2px] border-black rounded-lg">DOWNLOAD CV <i class="fa fa-download" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="md:flex flex-col justify-center items-center bg-orange-300 gap-8 rounded-lg" id="about">
+                            <p> About Me</p>
+                            <h1 class="text-xl uppercase font-extrabold"> Who am I?</h1>
+                            <Currently> I have a strong foundation in education and economics, with hands-on experience as a teacher, teaching assistant, and research assistant. My background demonstrates excellent analytical, problem-solving, and communication skills. Currently transitioning into tech, highlighting my commitment to continuous learning and career growth in the digital space.</p>
+                            <p> My career goal includes becoming a skilled full-stack developer, leveraging on my analytical abilities and structured thinking from my economics background. It is my aim to contribute to tech-driven solutions while expanding my expertise in backend technologies and software development.</p>
+                        </div>
+                    </div>
+                    
+                    <div>    
+                        <div class="flex flex-col justify-center items-center bg-orange-300 md:h-[30vh] md:w-full rounded-lg border-t-[2px] border-solid">
+                            <button class="relative overflow-hidden border-none bg-transparent">
+                                <h3 class="uppercase text-4xl typing">Hire Me!</h3>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+    
+    <div class="w-[90%] ml-auto mr-auto">
+    
+        <section class="md:h-[110vh] bg-[#F7F7F7]" id="services">
+            <div class="md:flex flex-col gap-[3rem]">
+                <p>What I Do.</p>
+                <h1 class="text-xl uppercase font-extrabold">Here are some of my expertise</h1>
+
+
+                <div class="md:flex flex-row justify-center items-center gap-[25px] pt-[10px]">
+
+                    <div class="md:flex flex-col  md:w-[30%] leading-[2] border-b-[2px] border-red-800 bg-white">
+                        <button class="text-2xl w-[4rem]  bg-red-600 ml-[6rem]"> <i class="fa fa-database" aria-hidden="true"></i></button>
+                        <h1 class="text-l uppercase font-bold pt-8"> Backend Development</h1>
+                        <p class="pt-8"> Building and maintaining scalable, efficient, and secure server-side applications using industry-standard technologies.</p>
+                    </div>
+                    <div class="md:flex flex-col md:w-[30%] leading-[2] border-b-[2px] border-yellow-300 bg-white">
+                        <button class="text-2xl w-[4rem] bg-yellow-300 ml-[6rem]"> <i class="fa fa-server" aria-hidden="true"></i></button>
+                        <h1 class="text-l uppercase font-bold pt-8"> Database Management</h1>
+                        <p class="pt-8">Designing, optimizing, and managing relational and non-relational databases to ensure data integrity and performance.</p>
+                    </div>
+                    <div class="md:flex flex-col md:w-[30%] leading-[2] border-b-[2px] border-[#809D3C] bg-white">
+                        <button class="text-2xl w-[4rem] bg-[#809D3C] ml-[6rem]"> <i class="fa fa-cogs" aria-hidden="true"></i></button>
+                        <h1 class="text-l uppercase font-bold pt-8"> API Development & Integration</h1>
+                        <p class="pt-8"> Creating and integrating RESTful and GraphQL APIs for seamless communication between systems and applications.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="md:flex flex-row justify-center items-center gap-[25px] pt-[10px]">
+                    <div class="md:flex flex-col md:w-[30%] leading-[2] border-b-[2px] border-violet-400 bg-white">
+                        <button class="text-2xl w-[4rem] bg-violet-400 ml-[6rem]"> <i class="fa fa-code" aria-hidden="true"></i></button>
+                        <h1 class="text-l uppercase font-bold pt-8"> Version Control & Collaboration</h1>
+                        <p class="pt-8"> Utilizing Git and GitHub for code management, version control, and collaborative development within teams.</p>
+                    </div>
+                    <div class="md:flex flex-col md:w-[30%] leading-[2] border-b-[2px] border-purple-400 bg-white">
+                        <button class="text-2xl w-[4rem] bg-purple-400 ml-[6rem]"> <i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+                        <h1 class="text-l uppercase font-bold pt-8"> Problem-Solving & Analytical Thinking</h1>
+                        <p class="pt-8"> Applying logical reasoning and analytical skills to design efficient algorithms and solve complex technical challenges.</p>
+                    </div>
+                    <div class="md:flex flex-col md:w-[30%] leading-[2] border-b-[2px] border-blue-400 bg-white">
+                        <button class="text-2xl w-[4rem] bg-blue-400 ml-[6rem]"> <i class="fa fa-book" aria-hidden="true"></i></button>
+                        <h1 class="text-l uppercase font-bold pt-8"> Continuous Learning & Adaptability</h1>
+                        <p class="pt-8"> Keeping up with the latest industry trends, tools, and best practices to ensure innovative and up-to-date solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="md:h-[70vh]" id="skills">
+            <div class="flex flex-col justify-between gap-[2rem]">
+                <p>My Speciality</p>
+                <h1 class="text-xl uppercase font-extrabold">My Skills</h1>
+        
+                <div class="w-full m-auto">
+                    <p class="flex justify-between mt-[5px] mb-[5px]">HTML</p>
+                </div>
+        
+                <div class="w-full m-auto">
+                    <p class="flex justify-between mt-[5px] mb-[5px]">CSS</p>
+                </div>
+        
+                <div class="w-full m-auto">
+                    <p class="flex justify-between mt-[5px] mb-[5px]">JAVASCRIPT</p>
+                </div>
+        
+                <div class="w-full m-auto">
+                    <p class="flex justify-between mt-[5px] mb-[5px]">GitHub</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="md:h-[50vh]" id="education">
+            <div class="md:flex flex-col gap-[30px]">
+                <p>Education</p>
+                <h1 class="text-xl uppercase font-extrabold">My Educational Background</h1>
+                <div>
+                    <details class="pt-[1rem] bg-[#F7F7F7]">
+                        <summary>Generation Ghana & MEST Africa </summary>
+                        <div>Web Development Training Program (Backend Development Focus)</div>
+                    </details>
+                    <details class="pt-[3rem] bg-[#F7F7F7]">
+                        <summary class="pt-8">University of Education,Winneba </summary>
+                        <div>Bachelor of Arts (Economics Education)</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    
+        <section class="md:h-[110vh] bg-[#F7F7F7] border-b-[5px] border-red-500 border-solid" id="experiences">
+            <div class="md:flex flex-col gap-[2rem]">
+                <p>Experiences</p>
+                <h1 class="text-xl uppercase font-extrabold">Work Experience</h1>
+                <div class="md:flex flex-row justify-center gap-[2rem] leading-[2]">
+                    <div class="bg-white md:w-[50%] text-center">
+                        <button class="hex-btn text-2xl w-[4rem] h-[3rem] bg-red-600 relative"> <i class="fa fa-taxi" aria-hidden="true"></i></button>
+                        <h3 class="text-l uppercase font-bold pt-8"> Bolt Ghana (September 2022 – Present)</h3>
+                        <p> Developed strong customer service and time management skills while managing multiple trips daily. </p>
+                        <p> Optimized navigation and route planning, ensuring timely and efficient service.</p>
+                        <p> Maintained a high safety and professionalism rating. </p>
+                    </div>
+                </div>
+                <div class="md:flex flex-row justify-center gap-[2rem] leading-[2]">
+                    <div class="bg-white md:w-[40%] text-center">
+                        <button class="hex-btn text-2xl w-[4rem] h-[3rem] bg-yellow-300 relative"> <i class="fa fa-shield" aria-hidden="true"></i></button>
+                        <h3 class="text-l uppercase font-bold pt-8"> Life Planner @ Enterprise Life Insurance, Ghana (May 2021 – October 2021)</h3>
+                        <p> Consulted with clients to assess financial goals and recommend suitable insurance plans.</p>
+                        <p> Developed persuasive communication skills in sales and business development. </p>
+                    </div>
+                    <div class="bg-white md:w-[40%] text-center">
+                        <button class="hex-btn text-2xl w-[4rem] h-[3rem] bg-[#809D3C] relative"> <i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <h3 class="text-l uppercase font-bold pt-8"> Teaching & Research Assistant @ (September 2019 – August 2020) </h3>
+                        <p> Assisted in course preparation and facilitated academic support for students. </p>
+                        <p> Conducted research on economic trends and compiled reports.</p>
+                    </div>
+                </div>
+                        
+            </div>
+    
+        </section>
+
+        <section class="md:h-[70vh] bg-[#F7F7F7] px-4" id="projects">
+            <p class="pt-4 text-lg">My Work</p>
+            <h1 class="pt-8 text-3xl font-bold">Projects</h1>
+        
+            <div class="parent pt-8">
+                <div>
+                    <img src="./images/img3.png" alt="Project 1">
+                    <p>A picture of the first landing page I created using html and css.</p>
+                    <button class="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md mt-4">
+                        <a href="https://matdinko.github.io/my-first-landing-page/" target="_blank">Visit Site</a>
+                    </button>
+                </div>
+                <div>
+                    <img src="./images/img4.png" alt="Project 2">
+                    <p> I used html and css to build a demo web page.</p>
+                    <button class="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md mt-8">
+                        <a href="https://matdinko.github.io/my-hotel-flex-page/" target="_blank">Visit Site</a>
+                    </button>
+                </div>
+                <div>
+                    <img src="./images/img5.png" alt="Project 3">
+                    <p>With html and css, I created a demo web page for the dream school.</p>
+                    <button class="px-4 py-2 bg-red-500 text-white rounded-lg shadow-md mt-4">
+                        <a href="" target="_blank">Visit Site</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="md:w-full md:flex flex-col md:flex-row gap-8 mx-auto h-[80vh]" id="contact">
+            <div class="md:w-full md:w-2/3">
+                <p class="pt-4">Get in Touch</p>
+                <h2 class="text-xl uppercase font-extrabold pt-8">Contact</h2>
+                <form class="space-y-4">
+                    <div class="flex flex-col">
+                        <label for="name" class="font-bold text-white">Name</label>
+                        <input type="text" id="name" class="p-2 rounded bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300" placeholder="Enter your name">
+                    </div>
+                        
+                    <div class="md:flex flex-col">
+                        <label for="email" class="font-bold text-white">Email</label>
+                        <input type="email" id="email" 
+                            class="p-2 rounded bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300" 
+                            placeholder="Enter your email">
+                    </div>
+                        
+                    <div class="md:flex flex-col">
+                        <label for="message" class="font-bold text-white">Message</label>
+                        <textarea id="message" rows="5" class="p-2 rounded bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-300" placeholder="Write your message"></textarea>
+                    </div>
+                        
+                    <button type="submit" class="md:w-[25%] bg-orange-300 hover:bg-red-500 text-white font-bold py-2 rounded-lg transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+                        
+            </div>
+                
+            <div class="md:flex flex-col gap-[3rem]">
+                <div class="pt-32">
+                    <button> <i class="fa fa-envelope" aria-hidden="true"></i></button>
+                    <h3 class="">Email</h3>
+                    <p class=""><a href="mailto:dechosenrace@gmail.com" class="">dechosenrace@gamil.com</a></p>
+                </div>
+                <div>
+                    <button> <i class="fa fa-phone" aria-hidden="true"></i></button>
+                    <h3 class="">Phone</h3>
+                    <p class="">+233 24 558 7370</p>
+                </div>
+            </div>
+                
+        </section>
+    
+        <footer class="md:flex flex-col justify-center items-center md:h-[30vh] bg-orange-300 gap-[20px] rounded-lg">
+            <div class="md:flex flex-row justify-center items-center gap-[20px]">
+                <button> <a href="https:www.linkedin.com/in/matthew-dinko-5b29821b5" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></button>
+                <button> <a href=""> <i class="fa fa-facebook-official" aria-hidden="true"></i></a></button>
+                <button> <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a></button>
+                <button> <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a></button>
+            </div>
+            <div>
+                <p>Designed by Matthew Dinko</p>
+            </div>
+        </footer>
+    </div>   
+
+    <script src="script.js"></script>
+</body>
+
+</html>
