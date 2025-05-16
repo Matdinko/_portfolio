@@ -152,21 +152,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 const response = await fetch('http://localhost:5000/api/contact', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
                     },
                     body: JSON.stringify(formData)
                 });
 
-                const data = await response.json();
-
-                if (response.ok) {
-                    alert('Message sent successfully! You will receive a confirmation email shortly.');
-                    contactForm.reset();
-                } else {
-                    throw new Error(data.error || 'Something went wrong');
+                if (!response.ok) {
+                    const data = await response.json().catch(() => ({}));
+                    throw new Error(data.error || `Server error: ${response.status}`);
                 }
+
+                const data = await response.json();
+                alert('Message sent successfully! You will receive a confirmation email shortly.');
+                contactForm.reset();
             } catch (error) {
-                alert('Error sending message: ' + error.message);
+                console.error('Form submission error:', error);
+                if (error.message.includes('Failed to fetch')) {
+                    alert('Error: Could not connect to the server. Please make sure the backend server is running.');
+                } else {
+                    alert('Error sending message: ' + error.message);
+                }
             } finally {
                 // Reset button state
                 submitButton.disabled = false;

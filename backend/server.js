@@ -28,9 +28,15 @@ const transporter = nodemailer.createTransport({
 });
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio', {
+const MONGODB_URI = process.env.MONGODB_URI;
+
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
+}).then(() => {
+    console.log("Successfully connected to MongoDB Atlas!");
+}).catch((error) => {
+    console.error("Error connecting to MongoDB:", error);
 });
 
 const connection = mongoose.connection;
