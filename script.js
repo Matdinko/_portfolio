@@ -149,7 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitButton.disabled = true;
                 submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-                const response = await fetch('http://localhost:5000/api/contact', {
+                console.log('Attempting to send message:', formData);
+
+                const response = await fetch('http://127.0.0.1:5000/api/contact', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -158,18 +160,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     body: JSON.stringify(formData)
                 });
 
+                console.log('Server response status:', response.status);
+
+                const data = await response.json();
+                console.log('Server response data:', data);
+
                 if (!response.ok) {
-                    const data = await response.json().catch(() => ({}));
                     throw new Error(data.error || `Server error: ${response.status}`);
                 }
 
-                const data = await response.json();
                 alert('Message sent successfully! You will receive a confirmation email shortly.');
                 contactForm.reset();
             } catch (error) {
                 console.error('Form submission error:', error);
                 if (error.message.includes('Failed to fetch')) {
-                    alert('Error: Could not connect to the server. Please make sure the backend server is running.');
+                    alert('Error: Could not connect to the server. Please make sure the backend server is running at http://127.0.0.1:5000');
                 } else {
                     alert('Error sending message: ' + error.message);
                 }

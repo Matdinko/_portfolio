@@ -9,12 +9,18 @@ const port = process.env.PORT || 5000;
 
 // CORS configuration
 app.use(cors({
-    origin: ['http://localhost:5000', 'http://127.0.0.1:5000', 'http://localhost:3000'],
+    origin: '*', // Allow all origins for testing
     methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type', 'Accept'],
     credentials: true
 }));
 
 app.use(express.json());
+
+// Test route
+app.get('/test', (req, res) => {
+    res.json({ message: 'Backend server is running!' });
+});
 
 // Email transporter configuration
 const transporter = nodemailer.createTransport({
